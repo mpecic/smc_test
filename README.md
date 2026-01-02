@@ -2,7 +2,7 @@
 
 ## Intro
 
-This is a small native (no Java, no Kotlin, no Android Studio) Android project. Some C code is compiled and packaged into an Android app, which at runtime finds out where the executable arm64 code of one of its own native function is located and attempts to change it. The target function is a simple `return 0`, and if the change is successful it becomes `return 1`.
+This is a small native (no Java, no Kotlin, no Android Studio) Android project. Some C code is compiled and packaged into an Android app, which at runtime finds out where the executable arm64 code of its own native function is located and attempts to change it. The target function is a simple `return 0`, and if the change is successful it becomes `return 1`.
 
 There is a logcat version which should be monitored with adb, and a GLES version that has a GUI. Logcat version will also log the details of memory page before and after the change.
 
